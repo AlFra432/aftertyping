@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Example1</title>
+	</head>
+	<body>
+		<div>
+			<label for="input1">Write something here: </label><input id="input1" autocomplete="off" value="testvalue">
+		</div>
+		<div>
+			<label for="text">Output: </label><span id="text"></span>
+		</div>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="../jquery.aftertyping.min.js"></script>
+		<script>
+			var settings = {
+				'delay' : 700,
+				'executeCallbackOnInit' : true, 
+				'executeCallbackOnEnter' : true
+			}
+
+			$('#input1').afterTyping(function(value, obj){
+				$('#text').html(value);
+			}, settings);
+		</script>
+	</body>
+</html>
