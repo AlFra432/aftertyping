@@ -1,6 +1,6 @@
 #**jQuery.AfterTyping**
 jQuery plugin that triggers callback function after user had stopped typing into input element for a while.
->Plugin will not trigger callback function if trimmed input value remains the same trough typing
+>Plugin will not trigger callback function if trimmed input value remains the same throughout typing
 
 ##**Installation**
 Clone the repo:	`git clone https://github.com/AlFra432/aftertyping.git "aftertyping"` 
