@@ -14,7 +14,7 @@ var callback = function(value, obj){
 
 $(selector).afterTyping(callback);
 ```
-Callback function can optionally have two arguments. First represents trimmed value of input element that sent it, and second is jquery object of the same sender element. 
+Callback function can optionally have two arguments. First represents trimmed value of input element, and second is jquery object of the same sender element. 
 >**value** is equivalent to **obj.val().trim()**
 
 ##**Plugin Settings**
