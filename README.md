@@ -14,13 +14,13 @@ var callback = function(value, obj){
 
 $(selector).afterTyping(callback);
 ```
-Callback function can optionally have two arguments. First represents trimmed value of an input element, and second is jquery object of the same sender element. 
+Callback function can optionally have two arguments. First argument represents trimmed value of an input element, and the second jquery object of the same sender element. 
 >**value** is equivalent to **obj.val().trim()**
 
 ##**Plugin Settings**
 + `delay` - time in ms for plugin to wait for another key press. If no key is pressed after that time, plugin will execute callback function. Default value is **500**.
-+ `executeCallbackOnInit` - If _true_ plugin will also execute callback function on initialization, else _false_. Default value is **true**
-+ `executeCallbackOnEnter`- If _true_  plugin will execute callback function immediately after key ENTER is pressed, else _false_. Default value is **true**
++ `executeCallbackOnInit` - If _true_: plugin will also execute callback function on initialization, else _false_. Default value is **true**
++ `executeCallbackOnEnter`- If _true_: plugin will also execute callback function immediately after key ENTER is pressed, else _false_. Default value is **true**
 
 ##[**Simple Example**](https://github.com/AlFra432/aftertyping/blob/master/examples/example1.html)
 ```html
