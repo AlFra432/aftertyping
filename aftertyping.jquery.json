@@ -2,7 +2,7 @@
     "name": "aftertyping",
     "title": "jQuery aftertyping",
     "description": "jQuery plugin that triggers callback function after user had stopped typing into input element for a while.",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "keywords": [
         "typing",
         "input",
