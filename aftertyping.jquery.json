@@ -16,7 +16,6 @@
     "maintainers": [
         {
             "name": "Aleksander Fras",
-            "email": "alkotrans@gmail.com",
             "url": "http://aleksanderfras.com"
         }
     ],
@@ -28,6 +27,7 @@
     ],
     "homepage": "https://github.com/AlFra432/aftertyping",
     "download": "",
+    "docs": "https://github.com/AlFra432/aftertyping",
     "dependencies": {
         "jquery": ">=1.7"
     }
