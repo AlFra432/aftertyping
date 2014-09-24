@@ -1,6 +1,6 @@
 #**jQuery.AfterTyping**
-jQuery plugin that triggers callback function after user had stopped typing into input element for a while.
->Plugin will not trigger callback function if trimmed input value remains the same throughout typing
+jQuery plugin that triggers callback function after user had stopped typing into an input element for a while.
+>Plugin will not trigger callback function if trimmed input value remains the same throughout typing.
 
 ##**Installation**
 Clone the repo:	`git clone https://github.com/AlFra432/aftertyping.git "aftertyping"` 
@@ -14,13 +14,13 @@ var callback = function(value, obj){
 
 $(selector).afterTyping(callback);
 ```
-Callback function can optionally have two arguments. First represents trimmed value of input element, and second is jquery object of the same sender element. 
+Callback function can optionally have two arguments. First represents trimmed value of an input element, and second is jquery object of the same sender element. 
 >**value** is equivalent to **obj.val().trim()**
 
 ##**Plugin Settings**
-+ `delay` - time in ms for plugin to wait for another key press. After that time, if no key is pressed, plugin executes callback function. Default value is **500**.
-+ `executeCallbackOnInit` - if _true_ plugin also executes callback function on initialization, if _false_ it does not. Default is **true**
-+ `executeCallbackOnEnter`- if _true_  plugin executes callback function immediately after ENTER is pressed, if _false_ it does not. Default is **true**
++ `delay` - time in ms for plugin to wait for another key press. If no key is pressed after that time, plugin will execute callback function. Default value is **500**.
++ `executeCallbackOnInit` - If _true_ plugin will also execute callback function on initialization, else _false_. Default value is **true**
++ `executeCallbackOnEnter`- If _true_  plugin will execute callback function immediately after key ENTER is pressed, else _false_. Default value is **true**
 
 ##[**Simple Example**](https://github.com/AlFra432/aftertyping/blob/master/examples/example1.html)
 ```html
